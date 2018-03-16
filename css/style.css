@@ -1,0 +1,51 @@
+/* ----------------------------------------------------
+General styles
+-------------------------------------------------  */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.column {
+    float: left;
+}
+
+.clearfix::before,
+.clearfix::after,
+.container::before,
+.container::after,
+[class*="layout-"]::before,
+[class*="layout-"]::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.layout-3-cols > .column {
+    width: 33.33%;
+}
+
+.layout-2-cols > .column {
+    width: 50%;
+}
+
+/* ----------------------------------------------------
+Common styles
+-------------------------------------------------  */
+.regular-offer,
+.special-offer,
+.site-footer {
+    padding: 0.25em 0;
+}
+
