@@ -4,15 +4,15 @@ General styles
 
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right:10px;
+    padding-left: 22px;
+    padding-right:22px;
     position: relative;
 }
 
@@ -282,16 +282,13 @@ body {
 /* ----------------------------------------------------
 Common styles
 -------------------------------------------------  */
-.site-header,
-.site-footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
 .column {
     border: 1px solid transparent;
 }
 .text-color {
     color: #27c7ab;
+    font-weight: 700;
 }
 /* ----------------------------------------------------
 Site header
@@ -300,8 +297,10 @@ Site header
     background-color: black;
     color: white;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.9em;
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 9px;
 }
 .navi {
     list-style: none;
@@ -309,7 +308,11 @@ Site header
 }
 .navi li {
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 33px;
+}
+
+.navi li:first-child {
+    padding-right: 15px;
 }
 /* ----------------------------------------------------
 Hero section
@@ -324,19 +327,26 @@ Hero section
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(211,211,211,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3d3d3', GradientType=0 );
     padding-top: 70px;
+    height: 504px;
 }
 .menu {
     background-color: black;
     color: white;
-    width: 100px;
-    padding: 10px 5px 5px 5px;
+    width: 120px;
+    height: 96px;
+    padding: 13px 5px 5px 13px;
     position: absolute;
-    top: -55px;
-    left: 270px;
+    top: -60px;
+    left: 224px;
 }
 .menu ul {
     list-style: none;
 }
+
+.menu li {
+    padding-bottom: 8px;
+}
+
 .triangle {
     width: 0;
     height: 0;
@@ -344,130 +354,172 @@ Hero section
     border-width: 0 10px 13px 10px;
     border-color: transparent transparent #000000 transparent;
     position: absolute;
-    top: -13px;
-    left: 36px;
+    top: -10px;
+    left: 44px;
 }
 h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     position: absolute;
-    left: 15px;
-    top: 50px;
+    left: -6px;
+    top: 64px;
 }
 .hero-section .column:first-of-type {
     position: relative;
 }
 .button-nav-left {
-    position: relative;
-    bottom: 180px;
-    left: 0;
+    position: absolute;
+    top: 140px;
+    left: 5px;
     text-decoration: none;
-    font-size: 70px;
+    font-size: 75px;
+    font-weight: 300;
     color: #27c7ab;
+    z-index: 2;
 }
 .hero-section .column:nth-of-type(2) {
     position: relative;
 }
 .button-nav-right {
     position: absolute;
-    top: 90px;
-    right: 0;
+    top: 139px;
+    right: 3px;
     text-decoration: none;
-    font-size: 70px;
+    font-size: 75px;
+    font-weight: 300;
     color: #27c7ab;
 }
 .hero-section p {
-    width: 500px;
+    width: 425px;
     position: absolute;
-    top: 160px;
-    left: -50px;
+    top: 139px;
+    left: -34px;
+    font-size: 15px;
     text-align: center;
+    line-height: 21px;
 }
 .button-cta {
     background-color: #27c7ab;
     margin-top: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px 20px;
+    font-size: 23px;
+    letter-spacing: 0.02em;
+    padding: 14px 30px 12px 45px;
     color: white;
     border-radius: 6px;
     position: absolute;
-    left: 120px;
-    top: 240px;
+    left: 44px;
+    top: 235px;
+}
+
+.hero-section img {
+    position: absolute;
+    top: -2px;
+    left: -38px;
+    height: 423px;
 }
 /* ----------------------------------------------------
 Products section
 -------------------------------------------------  */
 .products-section {
     background-color: white;
-    padding-top: 30px;
+    padding-top: 26px;
     padding-bottom: 30px;
+    height: 350px;
 }
 .products-section .column {
     position: relative;
-    width: 340px;
+    width: 334px;
 }
 .product-sticker {
     position: absolute;
-    top: 160px;
+    top: 150px;
     z-index: 2;
     width: 100%;
-    height: 50px;
+    height: 62px;
     background-color: rgba(255, 255, 255, 0.3);
-    text-indent: 15px;
+    text-indent: 18px;
+    font-size: 19px;
 }
+
 .products-section .column img {
     position: absolute;
     width: 100%;
 }
 .product-sticker::after {
     content: "";
-    border-bottom: 5px solid #27c7ab;
+    border-bottom: 7px solid #27c7ab;
     position: absolute;
-    left: 15px;
-    top: 17px;
-    width: 40%;
+    left: 13px;
+    top: 33px;
+    width: 42%;
 }
+
+.products-section h5 {
+    line-height: 46px;
+}
+
 h5 span {
     text-transform: uppercase;
 }
 .inputs {
-    padding: 15px 10px 25px 10px;
-    height: 250px;
+    padding: 28px 20px 10px 22px;
+    height: 254px;
+    border: 1px solid lightgrey;
+    font-size: 14px
 
 }
 .inputs p {
-    padding-top: 15px;
+    padding-top: 21px;
     padding-bottom: 15px;
+    line-height: 21px;
 }
+
+.inputs p:nth-of-type(2) {
+    padding-top: 4px;
+}
+
 h2 {
     font-size: 16px;
 }
 h2::after {
     content: "";
-    border-bottom: 5px solid #27c7ab;
+    border-bottom: 7px solid #27c7ab;
     position: absolute;
-    left: 10px;
-    top: 35px;
-    width: 40%;
+    left: 23px;
+    top: 49px;
+    width: 41%;
 }
-.products-section .column:first-child,
+.products-section .column:first-child {
+    margin-right: 25px;
+}
+
 .products-section .column:nth-child(2){
-    margin-right: 30px;
+    margin-right: 22px;
 }
+
+.products-section .column:last-child {
+    width: 340px;
+}
+
+
 /* ----------------------------------------------------
 Price section
 -------------------------------------------------  */
 .price-section {
     background-color: #ededed;
     padding-bottom: 110px;
+    height: 725px;
 }
 .price-section .column {
-    margin-top: 100px;
-    width: 340px;
-    height: 490px;
-    border: 2px solid grey;
+    margin-top: 99px;
+    width: 331px;
+    height: 499px;
+    border: 2px solid lightgrey;
     padding: 50px 20px 50px 20px;
     position: relative;
     top: 60px;
@@ -475,18 +527,20 @@ Price section
 }
 .price-section h3 {
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 43px;
+    left: 24px;
     color: grey;
     text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
 }
 .price-section h3::after {
     content: "";
-    border-bottom: 5px solid #27c7ab;
+    border-bottom: 8px solid #27c7ab;
     position: absolute;
-    left: 0px;
-    top: 25px;
-    width: 340px;
+    left: -1px;
+    top: 32px;
+    width: 320px;
     margin-bottom: 20px;
 }
 .basic-plan {
@@ -502,13 +556,13 @@ Price section
     background-color: #f2f2f2;
 }
 .outer-circle {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    border: 2px solid grey;
+    border: 2px solid lightgrey;
     position: absolute;
-    top: -45px;
-    left: 140px;
+    top: -39px;
+    left: 136px;
     background-color: white;
 }
 .standard-plan .outer-circle {
@@ -520,65 +574,100 @@ Price section
     height: 25px;
     border-radius: 50%;
     position: absolute;
-    top: -27px;
-    left: 158px;
-    background-color: grey;
+    top: -24px;
+    left: 151px;
+    background-color: lightgrey;
     z-index: 2;
 }
 .standard-plan .inner-circle {
     background-color: white;
 }
-h4 {
+.basic-plan h4 {
     text-transform: uppercase;
     font-size: 23px;
     font-weight: 500;
     color: #27c7ab;
-}
-.standard-plan h4 {
-    color: white;
-}
-.price {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 2px solid grey;
     position: absolute;
-    top: 110px;
-    left: 110px;
-    color: grey;
+    top: 26px;
+    left: 100px;
+    letter-spacing: -0.02em;
+}
+
+.standard-plan h4 {
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    top: 26px;
+    left: 74px;
+    letter-spacing: -0.02em;
+}
+
+.advance-plan h4 {
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 500;
+    color: #27c7ab;
+    position: absolute;
+    top: 26px;
+    left: 75px;
+    letter-spacing: -0.02em;
+}
+
+.price {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    position: absolute;
+    top: 79px;
+    left: 99px;
+    color: lightgrey;
     background-color: white;
 }
 .standard-plan .price {
     border: 2px solid #27c7ab;
+    color: #27c7ab;
 }
 .price p:first-child {
     font-size: 44px;
     font-weight: 700;
     position: absolute;
-    top: 17px;
-    left: 30px;
+    top: 26px;
+    left: 32px;
+}
+.advance-plan .price p:first-child {
+    left: 15px;
 }
 .price p:first-child sup {
     font-size: 15px;
+    position: absolute;
 }
 .price p:last-child {
     position: absolute;
     text-transform: uppercase;
-    top: 70px;
-    left: 25px;
-    font-size: 14px;
+    top: 79px;
+    left: 24px;
+    font-size: 16px;
     font-weight: 600;
 }
 .price-section ul {
-    font-size: 20px;
+    font-size: 24px;
     list-style: none;
     position: absolute;
-    top: 260px;
+    top: 243px;
     left: 0;
     color: grey;
-    line-height: 40px;
-    width: 337px;
+    line-height: 44px;
+    width: 327px;
 }
+
+.advance-plan ul {
+    left: -1px;
+    width: 328px;
+}
+
 .price-section li:nth-child(2n+1) {
     background-color: #d9d9d9;
 }
@@ -591,28 +680,55 @@ h4 {
 .standard-plan li:nth-child(2n+2) {
     background-color: #ededed;
 }
+
+.price-section li:nth-child(1) {
+    padding-left: 6px;
+
+}
+.standard-plan li:nth-child(1) {
+    padding-left: 7px;
+    margin-top: -3px;
+    line-height: 47px;
+}
+
+.standard-plan li:nth-child(3) {
+    padding-left: 4px;
+    padding-top: 2px;
+    margin-bottom: -3px;
+    line-height: 47px;
+}
+
+.advance-plan li:nth-child(3) {
+    padding-left: 13px;
+}
+
+.advance-plan li:nth-child(4) {
+    padding-left: 8px;
+}
+
 .button-join {
     background-color: #27c7ab;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
     font-size: 16px;
-    padding: 5px 20px 5px 20px;
-    border-radius: 5px;
+    padding: 8px 29px 7px 30px;
+    border-radius: 10px;
     position: absolute;
-    bottom: 15px;
-    left: 118px;
+    bottom: 19px;
+    left: 103px;
 }
 .standard-plan .button-join {
     background-color: white;
     color: #27c7ab;
+    bottom: 16px;
 }
 /* ----------------------------------------------------
 Form section
 -------------------------------------------------  */
 .form-section {
     background-color: white;
-    height: 400px;
+    height: 500px;
     margin-bottom: 50px;
 }
 
@@ -630,32 +746,35 @@ Form section
 
 .form-section h3 {
     position: absolute;
-    top: 25px;
+    top: 30px;
+    left: 6px;
     color: grey;
     text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .form-section h3::after {
     content: "";
-    border-bottom: 5px solid #27c7ab;
+    border-bottom: 8px solid #27c7ab;
     position: absolute;
-    left: 0px;
-    top: 25px;
-    width: 340px;
-    margin-bottom: 20px;
+    left: 0;
+    top: 32px;
+    width: 319px;
 }
 
 .contact-form {
     position: absolute;
-    top: 100px;
-    width: 100%;
+    top: 115px;
+    left: 5px;
+    width: 635px;
 }
 
 .form-control {
     display: block;
     width: 100%;
-    padding: 17px 12px 17px 12px;
-    margin-bottom: 10px;
+    padding: 29px 12px 15px 13px;
+    margin-bottom: 26px;
     border: 1px solid #27c7ab;
     line-height: 20px;
 }
@@ -663,51 +782,67 @@ Form section
 .form-control::-webkit-input-placeholder {
     color: lightgray;
     font-family: Raleway !important;
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+
 }
 
 .form-control::-moz-placeholder {
     color: lightgray;
     font-family: Raleway !important;
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: -0.04em;
 }
 
 .form-control::-ms-input-placeholder {
     color: lightgray;
     font-family: Raleway !important;
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: -0.04em;
 }
 
-textarea {
+.contact-form textarea {
     resize:none;
-    height: 140px;
+    height: 187px;
+    padding-top: 1px;
 }
 
 .form-section .column:nth-child(2)>img {
     position: absolute;
-    top: 70px;
-    left: 60px;
+    top: 86px;
+    left: 81px;
 }
 
 .checkbox {
     position: absolute;
-    left: 55px;
-    top: 290px;
-    width: 50px;
-    height: 42px;
+    left: 63px;
+    top: 329px;
+    width: 49px;
+    height: 49px;
     border: 1px solid #27c7ab;
 }
 
 .checkbox img {
     position: absolute;
+    left: 0px;
+    top: 8px;
+    height: 73%;
 }
 
 .clause {
     position: absolute;
-    top: 292px;
-    left: 120px;
-    width: 250px;
+    top: 332px;
+    left: 124px;
+    width: 279px;
     color: grey;
+    font-size: 19px;
+    letter-spacing: 0.017em;
 }
 
 .button-send {
@@ -715,13 +850,14 @@ textarea {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
-    padding: 15px 80px 15px 80px;
-    border-radius: 5px;
+    padding: 18px 106px 15px 114px;
+    border-radius: 9px;
     position: absolute;
-    top: 344px;
-    left: 55px;
+    top: 414px;
+    left: 61px;
+    letter-spacing: 0.03em;
 }
 
 /* ----------------------------------------------------
@@ -730,6 +866,8 @@ Site footer
 
 .site-footer {
     background-color: white;
+    padding-top: 34px;
+    padding-bottom: 10px;
 }
 
 .site-footer .column {
@@ -738,21 +876,24 @@ Site footer
 
 .copyrights {
     color: grey;
+    letter-spacing: 0.049em;
 }
 
 .footer-logo {
     display: inline-block;
     position: absolute;
-    left: 160px;
+    left: 168px;
     top: -15px;
 }
 
 .site-footer .column>p:not(.copyrights) {
     color: grey;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 21px;
     position: absolute;
-    right: 5px;
+    right: 0px;
+    top: -4px;
+    letter-spacing: 0.02em;
 }
 
 .site-footer .column>p:not(.copyrights) span {
