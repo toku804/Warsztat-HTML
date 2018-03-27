@@ -14,9 +14,15 @@
                 </div>
                 <nav class="column site-nav">
                     <ul class="navi">
-                        <li>O firmie</li>
-                        <li>Galeria</li>
-                        <li>Kontakt</li>
+                        <li><a href="#">O firmie</a>
+                             <ul class="navi-nested">
+                                 <li><a href="#">Aktualności</a></li>
+                                 <li><a href="#">Nasz team</a></li>
+                                 <li><a href="#">Historia</a></li>
+                             </ul>
+                        </li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,14 +36,6 @@
                     <img src="images/black_chair.png">
                 </div>
                 <div class="column">
-                    <div class="menu">
-                        <div class="triangle"></div>
-                        <ul>
-                            <li>Aktualności</li>
-                            <li>Nasz team</li>
-                            <li>Historia</li>
-                        </ul>
-                    </div>
                     <h1>Sit <span class="text-color">on</span> our <span class="text-color">chair</span></h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid at consequatur debitis id inventore, modi                       mollitia. Asperiores hic iusto, laudantium maiores, minima natus nihil, nulla quisquam ratione rem voluptatem.</p>
                     <a href="#" class="button-nav-right"> > </a>
@@ -132,17 +130,18 @@
                         <input type="text" class="form-control" name="name" placeholder="Imię">
                         <input type="email" class="form-control" name="email" placeholder="email">
                         <textarea class="form-control" name="message" placeholder="Wiadomość"></textarea>
+                        <label>
+                            <input type="checkbox" class="form-checkbox" name="approval">
+                            <span class="checkbox"></span>
+                        </label>
+                        <input type="submit" class="button-send" value="Wyślij">
                     </form>
                 </div>
                 <div class="column">
                     <img src="images/red_chair.png">
-                    <div class="checkbox">
-                        <img src="images/form_ok.jpg">
-                    </div>
                           <div class="clause">
                               <p>Zgadzam się na przetwarzanie danych osobowych</p>
                           </div>
-                    <a href="#" class="button-send">Wyślij</a>
                 </div>
             </div>
         </div>

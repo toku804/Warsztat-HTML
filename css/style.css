@@ -306,14 +306,54 @@ Site header
     list-style: none;
     text-align: right;
 }
-.navi li {
+.navi>li {
     display: inline-block;
     padding-left: 33px;
 }
 
-.navi li:first-child {
+.navi a {
+    text-decoration: none;
+    color: white;
+}
+
+.navi>li:first-child {
     padding-right: 15px;
 }
+
+.navi-nested {
+    list-style: none;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 96px;
+    position: absolute;
+    top: 40px;
+    left: 775px;
+    -webkit-padding-start: unset;
+}
+
+
+.navi-nested li {
+    padding: 17px 3px 0px 13px;
+    font-weight: 400;
+    text-transform: none;
+    text-align: left;
+    line-height: 11px;
+    letter-spacing: 0.04em;
+}
+
+ul.navi-nested::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 13px 10px;
+    border-color: transparent transparent #000000 transparent;
+    position: absolute;
+    top: -10px;
+    left: 44px;
+}
+
 /* ----------------------------------------------------
 Hero section
 -------------------------------------------------  */
@@ -339,25 +379,25 @@ Hero section
     top: -60px;
     left: 224px;
 }
-.menu ul {
-    list-style: none;
-}
+/*.menu ul {*/
+    /*list-style: none;*/
+/*}*/
 
-.menu li {
-    padding-bottom: 8px;
-}
+/*.menu li {*/
+    /*padding-bottom: 8px;*/
+/*}*/
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 10px 13px 10px;
-    border-color: transparent transparent #000000 transparent;
-    position: absolute;
-    top: -10px;
-    left: 44px;
-}
-h1 {
+/*.triangle {*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-style: solid;*/
+    /*border-width: 0 10px 13px 10px;*/
+    /*border-color: transparent transparent #000000 transparent;*/
+    /*position: absolute;*/
+    /*top: -10px;*/
+    /*left: 44px;*/
+/*}*/
+.hero-section h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
@@ -459,11 +499,11 @@ Products section
     width: 42%;
 }
 
-.products-section h5 {
+.product-sticker h5 {
     line-height: 46px;
 }
 
-h5 span {
+.product-sticker h5 span {
     text-transform: uppercase;
 }
 .inputs {
@@ -483,10 +523,10 @@ h5 span {
     padding-top: 4px;
 }
 
-h2 {
+.inputs h2 {
     font-size: 16px;
 }
-h2::after {
+.inputs h2::after {
     content: "";
     border-bottom: 7px solid #27c7ab;
     position: absolute;
@@ -819,10 +859,26 @@ Form section
     left: 81px;
 }
 
+.form-checkbox {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -183px;
+    right: -691px;
+    z-index: -1;
+}
+
+.form-checkbox:checked + span {
+    background: url("../images/form_ok.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .checkbox {
+    display: block;
     position: absolute;
-    left: 63px;
-    top: 329px;
+    left: 691px;
+    top: 214px;
     width: 49px;
     height: 49px;
     border: 1px solid #27c7ab;
@@ -854,10 +910,12 @@ Form section
     font-weight: bold;
     padding: 18px 106px 15px 114px;
     border-radius: 9px;
+    border: 0;
     position: absolute;
-    top: 414px;
-    left: 61px;
+    top: 300px;
+    left: 691px;
     letter-spacing: 0.03em;
+    font-family: Raleway;
 }
 
 /* ----------------------------------------------------
