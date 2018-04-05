@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    // Zadanie 1 zrobione w CSS
+
+
     //Zadanie 2
 
     var img1 = document.querySelector(".products-section .column:nth-of-type(1) img");
